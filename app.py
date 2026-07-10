@@ -2,10 +2,9 @@ import streamlit as st
 import numpy as np
 
 st.title("Proyecto módulo 1 Fundamentals")
-st.sidebar.title("Parámetros")
-
 st.image("Logo_python.png")
 st.sidebar.image("Logo_inst.png")
+st.sidebar.title("Módulos")
 
 modulo = st.sidebar.selectbox("Elija un módulo", ["Módulo Listas","Módulo Array","Módulo funciones"])
 if modulo == "Módulo Listas":
