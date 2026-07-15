@@ -29,6 +29,6 @@ else:
   tasa_anual = st.number_input("Ingrese Tasa Anual en decimal", value= 0.10)
   anios = st.number_input("Ingrese el Numero años del prestamo", value=1)
   pagos_por_anios = st.number_input("Ingrese cantidad pagos por año", value=12)
-  cuota = lf.cuota_prestamo(principal,tasa_anual,anios,pagos_por_anios)
+  cuota = round(lf.cuota_prestamo(principal,tasa_anual,anios,pagos_por_anios),2)
   st.write("La cuota del prestamo es:", cuota)
 
